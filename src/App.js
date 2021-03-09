@@ -1,25 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './Home';
+import Jordans from './Jordans';
+import NMDs from './NMDs';
+import Yeezys from './Yeezys';
+import NikeDunks from './NikeDunks';
+import { Route, Link } from 'react-router-dom';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className='App'>
+			<nav className='Links'>
+				<Link to='/Home'>Home</Link>
+				<Link to='/Jordans'> Jordans</Link>
+				<Link to='/NMDs'>NMDs</Link>
+				<Link to='/Yeezys'>Yeezys</Link>
+				<Link to='/NikeDunks'>Nike Dunks</Link>
+			</nav>
+			<main className='Main'>
+				<h1>My Sneaker Finder</h1>
+				<Route path='/Home' render={() => <Home />} />
+				<Route path='/Jordans' render={() => <Jordans />} />
+				<Route path='/NMDs' render={() => <NMDs />} />
+				<Route path='/Yeezys' render={() => <Yeezys />} />
+				<Route path='/NikeDunks' render={() => <NikeDunks />} />
+			</main>
+		</div>
+	);
 }
 
 export default App;
