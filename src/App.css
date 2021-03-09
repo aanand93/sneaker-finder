@@ -11,6 +11,7 @@
 	grid-row: 1;
 	grid-column: 1;
 	background: rgb(134, 134, 173);
+	padding: 10px;
 }
 .Main {
 	grid-row: 2;
@@ -19,7 +20,7 @@
 /* unvisited link */
 a:link {
 	color: red;
-	padding: 1em 1.5em;
+	padding: 1em;
 }
 
 /* visited link */
