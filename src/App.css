@@ -38,6 +38,38 @@ a:active {
 	color: blue;
 }
 
+.container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-auto-rows: minmax(250px, auto);
+	grid-gap: 1rem;
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 1rem;
+}
+
+.card {
+	border: 5px solid black;
+	border-radius: 1rem;
+	display: grid;
+	grid-template-rows: 1fr;
+	text-align: center;
+}
+.card:hover,
+.card-image:hover {
+	color: hotpink;
+}
+
+.card-image {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+img {
+	max-width: 90%;
+	height: auto;
+}
+
 /*
 Links that I used to create this css:
 
