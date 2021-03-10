@@ -19,13 +19,14 @@
 
 /* unvisited link */
 a:link {
-	color: red;
+	color: Black;
 	padding: 1em;
+	text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-	color: rgb(225, 250, 225);
+	color: rgb(0, 73, 0);
 }
 
 /* mouse over link */

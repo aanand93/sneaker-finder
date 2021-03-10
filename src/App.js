@@ -1,6 +1,7 @@
 import './App.css';
 // import Home from './Home';
 import Sneakers from './Sneakers';
+import SneakerDetails from './SneakerDetails';
 import Jordans from './Jordans';
 import NMDs from './NMDs';
 import Yeezys from './Yeezys';
@@ -20,6 +21,11 @@ function App() {
 			<main className='Main'>
 				<h1>My Sneaker Finder</h1>
 				<Route path='/Home' render={() => <Sneakers />} />
+				<Route
+					path='/Sneaker/:id'
+					render={(routerProps) => <SneakerDetails match={routerProps.match} />}
+				/>
+
 				<Route path='/Jordans' render={() => <Jordans />} />
 				<Route path='/NMDs' render={() => <NMDs />} />
 				<Route path='/Yeezys' render={() => <Yeezys />} />

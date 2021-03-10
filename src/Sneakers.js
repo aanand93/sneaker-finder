@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 // import { useParams } from 'react-router-dom';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Sneakers = (props) => {
 	const [sneakers, setSneakers] = useState([]);
@@ -12,7 +12,7 @@ const Sneakers = (props) => {
 			.then((res) => res.json())
 			// Take the json and do something with it
 			.then((json) => {
-				console.log(json.results);
+				// console.log(json.results);
 				const sneakerData = json.results;
 				setSneakers(sneakerData);
 
@@ -35,18 +35,17 @@ const Sneakers = (props) => {
 		<div>
 			<h2>Sneaker Gallery</h2>
 			<div className='container'>
-				{sneakers.map((sneaker) => {
-					return (
+				{sneakers.map((sneaker) => (
+					<Link to={`/Sneaker/${sneaker.id}`} key={sneaker.id}>
 						<div className='card' key={sneaker.id}>
 							<div className='card-image'>
 								<img src={sneaker.media.thumbUrl} alt={sneaker.id} />
 							</div>
-							<h1>{sneaker.title}</h1>
-							<p>Colorway: {sneaker.colorway}</p>
+							<h3>{sneaker.title}</h3>
 							<p>Retail Price: ${sneaker.retailPrice}</p>
 						</div>
-					);
-				})}
+					</Link>
+				))}
 			</div>
 		</div>
 	);
