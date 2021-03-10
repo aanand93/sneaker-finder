@@ -71,6 +71,13 @@ img {
 	height: auto;
 }
 
+.details-container {
+	margin: 0 auto;
+	max-width: 700px;
+	border: 5px solid black;
+	border-radius: 1rem;
+}
+
 /*
 Links that I used to create this css:
 
