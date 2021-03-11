@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Jordans = (props) => {
 	const [jordans, setJordans] = useState([]);
 	const url =
-		'https://api.thesneakerdatabase.com/v1/sneakers?limit=100&name=Jordan';
+		'https://api.thesneakerdatabase.com/v1/sneakers?limit=100&name=Jordan&releaseYear=2020';
 
 	useEffect(() => {
 		fetch(url) //<-- the url as a string
