@@ -27,7 +27,7 @@ const Yeezys = () => {
 	return (
 		<div>
 			<div>
-				<h2>Jordans</h2>
+				<h2>Yeezys</h2>
 				<div className='container'>
 					{yeezys.map((sneaker) => (
 						<Link to={`/Sneaker/${sneaker.id}`} key={sneaker.id}>

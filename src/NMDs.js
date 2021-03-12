@@ -27,7 +27,7 @@ const NMDs = () => {
 	return (
 		<div>
 			<div>
-				<h2>Jordans</h2>
+				<h2>NMDs</h2>
 				<div className='container'>
 					{nmds.map((sneaker) => (
 						<Link to={`/Sneaker/${sneaker.id}`} key={sneaker.id}>
