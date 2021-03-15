@@ -4,13 +4,11 @@
 	grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
 	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
-.nav {
-}
 
 .Links {
 	grid-row: 1;
 	grid-column: 1;
-	background: rgb(134, 134, 173);
+	background: rgb(174, 174, 185);
 	padding: 10px;
 }
 .Main {
