@@ -1,3 +1,69 @@
+## Project Description
+
+> I want to create a Sneaker Finder react app that uses this sneaker API and has a couple of components that displays different styles of sneakers. I also want to create a details page so you can click on each shoe and see all the details surrounding that specific shoe.
+
+## Link to the API you plan to use
+
+> API: https://thesneakerdatabase.com/api/
+> Docs: https://app.swaggerhub.com/apis-docs/tg4solutions/the-sneaker-database/1.0.0#/
+
+## Example data response you plan to use
+
+```json
+{
+"id": "1b6530bd-5a4f-43a9-8f5e-fddedec36bb3",
+"brand": "adidas",
+"colorway": "Stone/Stone/Stone",
+"gender": "men",
+"name": "Stone",
+"releaseDate": "2019-11-23",
+"retailPrice": 200,
+"shoe": "adidas Yeezy 500",
+"styleId": "FW4839",
+"title": "adidas Yeezy 500 Stone",
+"year": 2019,
+"media": {
+"imageUrl": "https://images.stockx.com/images/adidas-Yeezy-500-Stone-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1606323056",
+"smallImageUrl": "https://images.stockx.com/images/adidas-Yeezy-500-Stone-Product.jpg?fit=fill&bg=FFFFFF&w=300&h=214&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1606323056",
+"thumbUrl": "https://images.stockx.com/images/adidas-Yeezy-500-Stone-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=100&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1606323056"
+}
+},
+{
+```
+
+## Visual of your component hierarchy
+
+>
+
+- > Home.js ---------> has a welcome screen with info on the app
+- > Jordans.js -------> has a list of all the jordans available with their detail info
+- > Yeezys.js --------> has a list of all the yeezy available with their detail info
+- > NMDs.js ---------> has a list of all the NMDs available with their detail info
+- > NikeDunks.js -----> has a list of all the Nike Dunks available with their detail info
+
+## Wire Frames
+
+> <img width="849" alt="Screen Shot 2021-03-09 at 5 28 12 PM" src="https://media.git.generalassemb.ly/user/33964/files/f5453700-80fc-11eb-9f93-03c4fa986ac1">
+
+## User Stories
+
+> As a user I want to be able to click through the links in the nav bar at the top and see all the shoes listed in a grid. Each link will show a different style of shoe. I want to be able to see the details of each shoe as well including retail price and potential resale value.
+
+### MVP Goals
+
+- > Create functioning links for each style of shoe.
+- > Display a grid of shoes from the api data for each style of shoe.
+- > Display name, brand, color, and image of each shoe.
+- > Display the retail price and potential resale value price
+
+### Stretch Goals
+
+- > Create a link and route that will allow the user to click on any shoe and it will take you to a new page and display all the detail from the api about the shoe.
+- > Add a go back button that links to the previous page from the extended shoe details.
+- > Create filter options to allow the user to filter out shoes based on a variety of options
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
