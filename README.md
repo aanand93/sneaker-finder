@@ -36,14 +36,21 @@
 >
 
 - > Home.js ---------> has a welcome screen with info on the app
+- > Sneakers.js ---------> has sneaker gallery of all sneakers
 - > Jordans.js -------> has a list of all the jordans available with their detail info
 - > Yeezys.js --------> has a list of all the yeezy available with their detail info
 - > NMDs.js ---------> has a list of all the NMDs available with their detail info
 - > NikeDunks.js -----> has a list of all the Nike Dunks available with their detail info
+- > SneakerDetails.js -----> has a the detials of any sneaker clicked
 
 ## Wire Frames
 
 > <img width="849" alt="Screen Shot 2021-03-09 at 5 28 12 PM" src="https://media.git.generalassemb.ly/user/33964/files/f5453700-80fc-11eb-9f93-03c4fa986ac1">
+
+## Screenshots
+
+> <img width="1059" alt="Screen Shot 2021-03-16 at 8 38 31 AM" src="https://media.git.generalassemb.ly/user/33964/files/193fd580-8633-11eb-8e8d-3e33378a5b9e">
+> <img width="1058" alt="Screen Shot 2021-03-16 at 8 38 43 AM" src="https://media.git.generalassemb.ly/user/33964/files/193fd580-8633-11eb-9255-8d15c4b7ed22">
 
 ## User Stories
 

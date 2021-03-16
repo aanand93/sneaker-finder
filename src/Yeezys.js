@@ -12,7 +12,7 @@ const Yeezys = () => {
 			.then((res) => res.json())
 			// Take the json and do something with it
 			.then((json) => {
-				console.log(json.results);
+				// console.log(json.results);
 				const sneakerData = json.results;
 				setYeezys(sneakerData);
 
