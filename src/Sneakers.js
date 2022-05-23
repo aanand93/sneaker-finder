@@ -16,22 +16,11 @@ const Sneakers = (props) => {
 				// console.log(json.results);
 				const sneakerData = json.results;
 				setSneakers(sneakerData);
-
-				// the json parameter holds the json data
-				// so here's where you will need to
-				// use the setBirds method put the json into state
 			})
 			// Catch and log any errors to the console
 			.catch(console.error);
 	}, [url]);
 
-	// if (sneakers) {
-	// 	return (
-	// 		<div>
-	// 			<h1>{sneakers.name}</h1>
-	// 		</div>
-	// 	);
-	// }
 	return (
 		<div>
 			<h2>Sneaker Gallery</h2>

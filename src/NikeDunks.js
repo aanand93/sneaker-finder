@@ -15,10 +15,6 @@ const NikeDunks = () => {
 				// console.log(json.results);
 				const sneakerData = json.results;
 				setDunks(sneakerData);
-
-				// the json parameter holds the json data
-				// so here's where you will need to
-				// use the setBirds method put the json into state
 			})
 			// Catch and log any errors to the console
 			.catch(console.error);
