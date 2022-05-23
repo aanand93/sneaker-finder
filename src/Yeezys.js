@@ -4,20 +4,26 @@ import { Link } from 'react-router-dom';
 const Yeezys = () => {
 	const [yeezys, setYeezys] = useState([]);
 	const url =
-		'https://api.thesneakerdatabase.com/v1/sneakers?limit=100&name=Yeezy';
+		'https://v1-sneakers.p.rapidapi.com/v1/sneakers?limit=100&name=yeezy';
 
+	const API_KEY = process.env.REACT_APP_API_KEY;
+
+	const options = {
+		method: 'GET',
+		headers: {
+			'X-RapidAPI-Host': 'v1-sneakers.p.rapidapi.com',
+			'X-RapidAPI-Key': `${API_KEY}`,
+		},
+	};
 	useEffect(() => {
-		fetch(url) //<-- the url as a string
-			// Wait for the response and convert it to json
-			.then((res) => res.json())
-			// Take the json and do something with it
+		fetch(url, options)
+			.then((response) => response.json())
 			.then((json) => {
-				// console.log(json.results);
+				// console.log(response)
 				const sneakerData = json.results;
 				setYeezys(sneakerData);
 			})
-			// Catch and log any errors to the console
-			.catch(console.error);
+			.catch((err) => console.error(err));
 	}, [url]);
 
 	return (
