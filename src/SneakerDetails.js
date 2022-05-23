@@ -2,21 +2,29 @@ import React, { useState, useEffect } from 'react';
 
 const SneakerDetails = (props) => {
 	const [sneakerDetails, setDetails] = useState();
-	const url = `https://api.thesneakerdatabase.com/v1/sneakers/${props.match.params.id}`;
+	const url =
+		`https://v1-sneakers.p.rapidapi.com/v1/sneakers/${props.match.params.id}`;
 
+	const API_KEY = process.env.REACT_APP_API_KEY;
+
+	const options = {
+		method: 'GET',
+		headers: {
+			'X-RapidAPI-Host': 'v1-sneakers.p.rapidapi.com',
+			'X-RapidAPI-Key': `${API_KEY}`,
+		},
+	};
 	useEffect(() => {
-		fetch(url) //<-- the url as a string
-			// Wait for the response and convert it to json
+		fetch(url, options)
 			.then((res) => res.json())
-			// Take the json and do something with it
 			.then((json) => {
-				// console.log(json.results);
+				// console.log(response)
 				const sneakerData = json.results;
 				setDetails(sneakerData);
 			})
-			// Catch and log any errors to the console
-			.catch(console.error);
+			.catch((err) => console.error(err));
 	}, [url]);
+
 	if (!sneakerDetails) {
 		return null;
 	}
