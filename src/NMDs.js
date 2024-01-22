@@ -49,13 +49,17 @@ const NMDs = () => {
 			<div>
 				<h2>NMDs</h2>
 				<div className='container'>
+					{/* map sneakers as 'nmds' to dynamically call rest of atributes of each sneaker object */}
 					{nmds.map((sneaker) => (
 						<Link to={`/Sneaker/${sneaker.id}`} key={sneaker.id}>
 							<div className='card' key={sneaker.id}>
 								<div className='card-image'>
+									{/* Sneaker Image */}
 									<img src={sneaker.media.thumbUrl} alt={sneaker.id} />
 								</div>
+								{/* Sneaker Name including Brand */}
 								<h3>{sneaker.title}</h3>
+								{/* Sneaker Retail Price */}
 								<p>Retail Price: ${sneaker.retailPrice}</p>
 							</div>
 						</Link>

@@ -22,7 +22,7 @@ const Sneakers = (props) => {
 	// }, [url]);
 
 	const url =
-		'https://v1-sneakers.p.rapidapi.com/v1/sneakers?limit=100&releaseYear=2022';
+		'https://v1-sneakers.p.rapidapi.com/v1/sneakers?limit=100&releaseYear=2023';
 
 	const API_KEY = process.env.REACT_APP_API_KEY;
 
@@ -48,13 +48,17 @@ const Sneakers = (props) => {
 		<div>
 			<h2>Sneaker Gallery</h2>
 			<div className='container'>
+				{/* map sneakers as 'sneaker' to dynamically call rest of atributes of each sneaker object */}
 				{sneakers.map((sneaker) => (
 					<Link to={`/Sneaker/${sneaker.id}`} key={sneaker.id}>
 						<div className='card' key={sneaker.id}>
 							<div className='card-image'>
+								{/* Sneaker Image */}
 								<img src={sneaker.media.thumbUrl} alt={sneaker.id} />
 							</div>
+							{/* Sneaker Name including brand */}
 							<h3>{sneaker.title}</h3>
+							{/* Sneaker Price */}
 							<p>Retail Price: ${sneaker.retailPrice}</p>
 						</div>
 					</Link>

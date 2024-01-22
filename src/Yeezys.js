@@ -31,13 +31,17 @@ const Yeezys = () => {
 			<div>
 				<h2>Yeezys</h2>
 				<div className='container'>
+					{/* map sneakers as 'yeezys' to dynamically call rest of atributes of each sneaker object */}
 					{yeezys.map((sneaker) => (
 						<Link to={`/Sneaker/${sneaker.id}`} key={sneaker.id}>
 							<div className='card' key={sneaker.id}>
 								<div className='card-image'>
+									{/* Sneaker Image */}
 									<img src={sneaker.media.thumbUrl} alt={sneaker.id} />
 								</div>
+								{/* Sneaker Name including Brand */}
 								<h3>{sneaker.title}</h3>
+								{/* Sneaker Retail Price */}
 								<p>Retail Price: ${sneaker.retailPrice}</p>
 							</div>
 						</Link>
