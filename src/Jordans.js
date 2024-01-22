@@ -21,7 +21,7 @@ const Jordans = (props) => {
 	// }, [url]);
 
 	const url =
-		'https://v1-sneakers.p.rapidapi.com/v1/sneakers?limit=100&brand=jordan';
+		'https://v1-sneakers.p.rapidapi.com/v1/sneakers?limit=100&brand=Jordan';
 
 	const API_KEY = process.env.REACT_APP_API_KEY;
 
