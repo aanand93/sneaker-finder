@@ -4,7 +4,7 @@
 
 ## Link to the API you plan to use
 
-> API: https://thesneakerdatabase.com/api/
+> API: https://rapidapi.com/tg4-solutions-tg4-solutions-default/api/v1-sneakers/
 > Docs: https://app.swaggerhub.com/apis-docs/tg4solutions/the-sneaker-database/1.0.0#/
 
 ## Example data response you plan to use
